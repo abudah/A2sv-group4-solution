@@ -2,7 +2,7 @@ class Solution:
     def updateBoard(self, board: List[List[str]], click: List[int]) -> List[List[str]]:
         numbers = "B123456789"
         queue = deque([click])
-        directions = [(-1, 0),(1, 0),(0, -1),(0, 1),(1, 1),(-1, -1),(1, -1),(-1, 1),]
+        directions = [(-1, 0), (1, 0), (0, -1),(0, 1),(1, 1),(-1, -1),(1, -1),(-1, 1),]
         
         while queue:
             i, j = queue.popleft()

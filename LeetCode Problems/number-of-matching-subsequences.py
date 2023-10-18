@@ -3,6 +3,7 @@ class TrieNode():
         self.is_end = False
         self.children = [None for i in range(26)]
 
+
 class Solution:
     def numMatchingSubseq(self, s: str, words: List[str]) -> int:
         def is_subsequence(mainWord, curr, word):
